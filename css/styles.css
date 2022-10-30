@@ -46,20 +46,97 @@ line-height: 1.1428;
 letter-spacing: 0.02em;  
 }
 
-.header-nav-black {
+.header-nav-link {
 color: var(--text-color);
 }
-
-.header-nav-blue {
-color: var(--text-active-color);
-}
+/*пошта*/
 
 .mail {
 color: var(--text-active-color);
 }
+/*телефон*/
 
 .tel {
 color: var(--text-title-color);
+}
+/*Заголовок студiя*/
+
+.title {
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 1.3636;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--background-color);
+background-color: var(--footer-background-color);
+}
+/*Переваги*/
+/* Заголовки 
+"Увага до деталей"
+"Пунктуальнысть"
+"Планування"
+"Сучасны технологыы"*/
+
+.heading {
+
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.1482;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--text-color);
+}
+
+/*Текст абзацiв*/
+
+.headline {
+
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.7142;
+letter-spacing: 0.03em;
+color: var(--text-title-color);
+}
+/*Заголовки 
+"Чим ми займаэмось"*/
+
+
+.caption {
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.1667;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-color);
+}
+/*Команда*/
+.team-subtitle {
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 2.000;
+letter-spacing: 0.06em;
+color: var(--text-color);
+}
+
+.team-text {
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 1.1875;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--text-title-color);
+}
+
+
+.team-section {
+background: var(--button-background-color);
 }
 
 /*Кнопки*/
@@ -74,12 +151,14 @@ text-align: center;
 letter-spacing: 0.03em;
 cursor: pointer;
 }
+/*Синя кнопка*/
 
 .button-blue {
 color: var(--background-color);
 background-color:var(--text-active-color);
 border: none;
 }
+/* Чорна кнопка*/
 
 .button-black {
 color: var(--text-color);
@@ -87,7 +166,8 @@ background-color: var(--button-background-color);
 border: none;
 }
 
-/*Роботи*/
+/*Секцiя Роботи*/
+/*Заголовки*/
 
 .subtitle {
 
@@ -98,6 +178,8 @@ line-height: 2.000;
 letter-spacing: 0.06em;
 color: var(--text-color);
 }
+
+/*Категорii*/
 
 .text {
 
@@ -111,10 +193,10 @@ color: var(--text-title-color);
 
 
 footer {
-    background-color: var(--footer-background-color);
+background-color: var(--footer-background-color);
 }
 
-/*Адлеса*/
+/*Адреса*/
 .address {
 
 font-style: normal;
@@ -127,21 +209,19 @@ color: var(--background-color);
 
 /*Hover*/
 
-.header-nav-black:hover,
-.header-nav-blue:hover { 
+.header-nav-link:hover { 
 color: var(--text-active-color);
 }
 
 .button-blue:hover,
 .button-black:hover {
-color: var(--background-color);
+/*color: var(--background-color);*/
 background-color: var(--text-active-color)
 }
 
 /*Focus*/
 
-.header-nav-black:focus,
-.header-nav-blue:focus,
+.header-nav-link:focus,
 .button-blue:focus,
 .button-black:focus
 {
