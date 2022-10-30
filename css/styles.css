@@ -11,7 +11,8 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: var(--background-color);
+  color: var(--text-color);
+  /*background-color: var(--background-color);*/
 }
 
 ul {
@@ -35,34 +36,35 @@ font-weight: 700;*/
 }
 
 /*Навiгацiя*/
-
-.header-nav,
-.conect {
+/*шрифт*/
+.header-link,
+.connect-link,
+.header-link-current {
   /*font-style: normal;*/
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
 }
-
-.header-nav-link {
+/*колiр*/
+.header-link {
   color: var(--text-color);
 }
-/*пошта*/
 
-.mail {
+.header-link-current {
   color: var(--text-active-color);
 }
-/*телефон*/
 
-.tel {
+/*пошта, телефон*/
+
+.connect-link {
   color: var(--text-title-color);
 }
 
 .text-web,
-.header-nav-link,
-.mail,
-.tel,
+.header-link,
+.header-link-current,
+.connect-link,
 .address {
   text-decoration: none;
 }
@@ -90,7 +92,7 @@ font-weight: 700;*/
 "Планування"
 "Сучаснi технологii"*/
 
-.heading {
+.title-desc {
   /*font-style: normal;
 font-weight: 700;*/
   font-size: 14px;
@@ -102,7 +104,7 @@ font-weight: 700;*/
 
 /*Текст абзацiв*/
 
-.headline {
+.description {
   /*font-style: normal;
 font-weight: 400;*/
   font-size: 14px;
@@ -113,7 +115,7 @@ font-weight: 400;*/
 /*Заголовки 
 "Чим ми займаэмось"*/
 
-.caption {
+.team {
   /*font-style: normal;
 font-weight: 700;*/
   font-size: 36px;
@@ -123,6 +125,7 @@ font-weight: 700;*/
   color: var(--text-color);
 }
 /*Команда*/
+
 .team-subtitle {
   /*font-style: normal;
 font-weight: 700;*/
@@ -142,11 +145,17 @@ font-weight: 400;*/
   color: var(--text-title-color);
 }
 
+.fone {
+  background-color: var(--background-color);
+}
+
 .team-section {
   background: var(--button-background-color);
 }
 
+/*Секця роботи*/
 /*Кнопки*/
+/*Шрифт*/
 
 .button {
   /*font-style: normal;*/
@@ -157,22 +166,28 @@ font-weight: 400;*/
   letter-spacing: 0.03em;
   cursor: pointer;
 }
-/*Синя кнопка*/
 
-.button-blue {
+.button-order {
+  /* font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;*/
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: var(--background-color);
   background-color: var(--text-active-color);
-  border: none;
 }
-/* Чорна кнопка*/
+/*Колiр*/
 
-.button-black {
+.button {
   color: var(--text-color);
   background-color: var(--button-background-color);
   border: none;
 }
 
-/*Секцiя Роботи*/
 /*Заголовки*/
 
 .subtitle {
@@ -209,31 +224,67 @@ footer {
   color: var(--background-color);
 }
 
+.connect {
+  /*font-family: 'Roboto';*/
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7142;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /*Hover*/
 
-.header-nav-link:hover {
+.header-link:hover,
+.connect-link:hover,
+.connect:hover {
   color: var(--text-active-color);
 }
 
-.button-blue:hover,
-.button-black:hover {
-  /*color: var(--background-color);*/
+.header-link-current:hover {
+  color: var(--text-color);
+}
+
+.button:hover {
+  color: var(--background-color);
   background-color: var(--text-active-color);
+}
+
+.button-order:hover {
+  color: var(--text-color);
+  border: none;
 }
 
 /*Focus*/
 
-.header-nav-link:focus,
-.button-blue:focus,
-.button-black:focus {
+.header-link:focus,
+.connect-link:focus,
+.connect:focus {
   color: var(--text-active-color);
+}
+
+.header-link-current:focus {
+  color: var(--text-color);
+}
+
+.button:hover {
+  color: var(--background-color);
+  background-color: var(--text-active-color);
+}
+
+.button-order:focus {
+  color: var(--text-color);
+  border: none;
 }
 
 /*Active*/
 
-.header-nav-black:active,
-.header-nav-blue:active,
-.button-blue:active,
-.button-black:active {
+.header-link:active,
+.button:active {
   color: var(--text-color);
+}
+
+.button-order:active {
+  color: var(--background-color);
 }
