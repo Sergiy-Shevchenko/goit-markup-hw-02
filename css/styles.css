@@ -51,7 +51,7 @@ font-weight: 700;*/
   color: var(--text-color);
 }
 
-.header-link-current {
+.header-nav .header-link.current {
   color: var(--text-active-color);
 }
 
