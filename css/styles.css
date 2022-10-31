@@ -82,6 +82,11 @@ font-weight: 700;*/
   color: var(--background-color);
 }
 
+/*Прихований текст*/
+
+.text-shadov > span
+{display: none;}
+
 .section {
   background-color: var(--footer-background-color);
 }
