@@ -163,6 +163,7 @@ font-weight: 400;*/
 /*Шрифт*/
 
 .button {
+  font-family: 'Roboto';
   /*font-style: normal;*/
   font-weight: 500;
   font-size: 16px;
@@ -173,8 +174,8 @@ font-weight: 400;*/
 }
 
 .button-order {
-  /* font-family: 'Roboto';
-font-style: normal;
+font-family: 'Roboto';
+/*font-style: normal;
 font-weight: 700;*/
   font-size: 16px;
   line-height: 1.875;
@@ -217,6 +218,7 @@ font-weight: 400;*/
 
 footer {
   background-color: var(--footer-background-color);
+ 
 }
 
 /*Адреса*/
@@ -227,6 +229,7 @@ footer {
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: var(--background-color);
+  text-decoration: none;
 }
 
 .connect {
@@ -237,13 +240,15 @@ footer {
   line-height: 1.7142;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 
 /*Hover*/
 
 .header-link:hover,
 .connect-link:hover,
-.connect:hover {
+.connect:hover,
+.address:hover {
   color: var(--text-active-color);
 }
 
